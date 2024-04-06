@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TranspireCommands:jar">
+    <output-path>$USER_HOME$/OneDrive/Desktop/1.20.4 server/plugins</output-path>
+    <root id="archive" name="TranspireCommands.jar">
+      <element id="module-output" name="TranspireCommands" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>

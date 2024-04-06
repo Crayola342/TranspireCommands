@@ -1,0 +1,50 @@
+settings:
+  ##changing these will change the chances of getting a reward for each category.
+  chance-for-mob-reward: 100
+  chance-for-block-reward: 100
+  chance-for-fish-reward: 100
+
+
+blocks:
+  stone: ##this is just a name, it can be called whatever
+    type: "STONE" ##this is the block that will be required to break to have a chance to get a reward.
+    damage: 0 #this is the ID of the block, this will be needed in the lower versions of minecraft.
+    commands: ##these are the available commands
+      emerald: ##this is just a name, it can be called anything
+        command: 'give %player% emerald 1' ##this it the command that will be run.
+        chance: 50 #this is the chance of the plugin choosing this command.
+        send-message: true #this will decide whether a message should be sent.
+        message: '[&7[&a!&7] You have &a&nfound&f 1x Emerald&7 while &a&nmining!' ##this is the message that will be sent depending on the variable from above.
+      diamond:
+        command: 'give %player% diamond 1'
+        chance: 50
+        send-message: true
+        message: '[&7[&a!&7] You have &a&nfound&f 1x Diamond&7 while &a&nmining!'
+mobs:
+  blaze:
+    type: "BLAZE"
+    commands:
+      diamond:
+        command: 'give %player% diamond 1'
+        chance: 50
+        send-message: true
+        message: '[&7[&a!&7] You have &a&nfound&f 1x Diamond&7 while &a&ngrinding!'
+      emerald:
+        command: 'give %player% emerald 1'
+        chance: 50
+        send-message: true
+        message: '[&7[&a!&7] You have &a&nfound&f 1x Emerald&7 while &a&ngrinding!'
+fish:
+  fish:
+    type: "RAW_FISH"
+    commands:
+      diamond:
+        command: 'give %player% diamond 1'
+        chance: 50
+        send-message: true
+        message: '[&7[&a!&7] You have &a&nfound&f 1x Diamond&7 while &a&nfishing!'
+      emerald:
+        command: 'give %player% emerald 1'
+        chance: 50
+        send-message: true
+        message: '[&7[&a!&7] You have &a&nfound&f 1x Emerald&7 while &a&nfishing!'
